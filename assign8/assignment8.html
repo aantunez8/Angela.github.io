@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>***</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/assignment8.css">	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+<header>
+<h1>Assignment 8</h1>  
+<h2>JQuery</h2>
+<h3>Angel Antunez</h3>
+</header>
+      
+<main>
+    
+<button id="Scooby">Show First Paragraph.</button>
+<button id="Shaggy">Show Second Paragraph</button>
+<button id="Ruby">Show Third Paragraph</button>
+    
+<figure>
+<img src="img/frenchtoast.jpg">
+<figcaption>(My Photo of Breakfast!)</figcaption>
+</figure>
+
+<p id="One">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+<p id="Two">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+<P id="Three">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</P>
+    
+<p>Text source from lipsum.com</p>
+    
+<footer>&#169Angel Antunez 2025. All Rights Reserved</footer>
+    
+</main>
+
+
+
+  </div><!-- close "container" -->
+  
+<!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      
+    
+<script>
+  $(document).ready(function() {
+
+$('p#One').hide();
+$('p#Two').hide();
+$('P#Three').hide();
+      
+$('button#Scooby').click(function(){
+$('p#One').slideToggle();
+});//close click function One
+      
+$('button#Shaggy').click(function(){
+$('p#Two').fadeToggle();
+});//close click function Two
+
+$('button#Ruby').click(function(){
+$('p#Three').fadeToggle(1000);
+});//close click funtion Three
+       
+  
+
+  }); //close .ready()
+</script>    
+
+</body>
+	
+</html> 
